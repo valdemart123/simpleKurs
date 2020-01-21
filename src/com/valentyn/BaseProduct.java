@@ -1,7 +1,12 @@
 package com.valentyn;
 
+
+
 public class BaseProduct {
-    private String productTitle;
+
+
+
+  /*  private String productTitle;
     private int availableQuantity;
     private double price;
     public BaseProduct(String productTitle, int availableQuantity, double price) {
@@ -20,5 +25,5 @@ public class BaseProduct {
         } else { availableQuantity -= ordered;
         System.out.println("You have ordered "+availableQuantity+" pts of "+productTitle);
         }
-    }
+    }*/
 }

@@ -1,0 +1,17 @@
+<products>
+    <product id="01">
+        <title>Bread</title>
+        <price>10.55</price>
+        <quantity>100</quantity>
+    </product>
+    <product id="02">
+        <title>Beer</title>
+        <price>26.05</price>
+        <quantity>100</quantity>
+    </product>
+    <product id="03">
+        <title>Cheeps</title>
+        <price>13.85</price>
+        <quantity>100</quantity>
+    </product>
+</products>
