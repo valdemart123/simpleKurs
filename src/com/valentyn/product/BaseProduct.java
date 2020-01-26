@@ -19,11 +19,14 @@ public class BaseProduct {
 
     public void makeOrder(int ordered) {
         if (availableQuantity<ordered) {
-            System.out.println("Product out of stock for your quantity. You can order only: "+availableQuantity+ "pts");
+            System.out.println("Product out of stock for your quantity. You can order only: "+ availableQuantity + "pts");
         } else {
             availableQuantity -= ordered;
-        System.out.println("You have ordered "+availableQuantity+" pts of "+productTitle);
+        System.out.println("Вы заказали "+ ordered + " штук "+ productTitle+" за "+ordered*price +" евро");
         }
+    }
 
+    public void showProduct() {
+        System.out.println(productTitle+" \n"+price+" \n"+availableQuantity + " ");
     }
 }
