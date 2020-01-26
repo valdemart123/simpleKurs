@@ -1,11 +1,16 @@
 package com.valentyn.orders;
 
-import java.util.HashMap;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class OrdersHistory {
-    private HashMap <Integer, String[]> history = new HashMap<>();
-    public void setHistory (int orderNumber, String [] titleAndQuantity ) {
-        history.put(orderNumber, titleAndQuantity);
+    public void addEntityHistory(String order) {
+        try (FileWriter fileWriter = new FileWriter("src/resources/history.txt", true)) {
+            fileWriter.write(order);
+            fileWriter.append('\n');
+            fileWriter.flush();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
-
 }

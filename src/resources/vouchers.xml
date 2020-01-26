@@ -1,0 +1,10 @@
+<vouchers>
+    <voucher id="01">
+        <vouchercode>CODE01</vouchercode>
+        <percent>5</percent>
+    </voucher>
+    <voucher id="02">
+        <vouchercode>CODE02</vouchercode>
+        <percent>10</percent>
+    </voucher>
+</vouchers>
